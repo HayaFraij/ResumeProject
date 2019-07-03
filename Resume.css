@@ -1,0 +1,25 @@
+.main{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto;
+}
+.header{
+	grid-column: 1/3;
+	background-color: #21785D;
+	padding: 20px;
+
+}
+.header-l{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	/*float: left;*/
+	color: white;
+	background-color: none;
+	padding: 40px;
+}
+.img{
+	grid-column: 2/3;
+	grid-row: 1/3;
+	border: 5px solid #21785D;
+	float: right;
+}
