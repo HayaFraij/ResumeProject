@@ -5,39 +5,39 @@
 	width: 70%;
 	border: 2px solid #053A27;
 }
-
-.header-l{
+.header{
+	grid-column: 1/4;
+	background-color: #053A27;
+	display: grid;
+	padding: 50px;
+	margin-bottom: 30px;
+}
+.name{
 	grid-column: 1/3;
 	color: white;
-	background-color: #053A27;
-	padding: 50px;
 	font-size: 1.5em;
-	margin-bottom: 80px;
-}
-.header-r{
-	background-color: #053A27;
-	margin-bottom: 80px;
 }
 .img{
 	grid-column: 3/4;
 	border: 10px solid #053A27;
 	margin: 80px 50px -100px 50px;
 }
-.line{
-	height: 2px;
-	background-color: #05412E;
-	margin: 70px;
-}
-
 .content-left{
 	grid-column: 1/3;
-	margin-left: 50px;
 	display: grid;
+	border-top: 2px solid #05412E;
+	margin: 40px 70px 20px 70px;
+	padding-top: 40px;
+}
+.content-right{
+	grid-column: 3/4;
+	border-top: 2px solid #05412E;
+	margin: 40px 70px 20px 70px;
+	padding-top: 40px;
 }
 .content-title{
 	grid-column: 1/3;
 	margin-bottom: 30px;
-
 }
 .elm-left{
 	grid-column: 1/2;
@@ -45,15 +45,9 @@
 .elm-right{
 	grid-column: 2/3;
 }
-.content-right{
-	grid-column: 3/4;
-	padding-left: 80px;
-}
-
 .progress1{
 	background-color: #DFEAE6;
 	width: 60%;
-
 }
 .progress1-col{
 	display: inherit;
@@ -61,40 +55,16 @@
 	width:75%;
 	height:7px;
 }
-
-.phone{
-	grid-column: 1/2;
-	color: white;
-}
-.mailto{
-	grid-column: 2/3;
-	color: white;
-}
-.linkedin{
-	grid-column: 3/4;
-	color: white;
-}
-
 .content-left-3fr{
 	grid-column: 1/3;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;	
+	justify-content: space-between;
+	padding-right: 90px;
 }
 .content-right-2fr{
-	grid-column: 3/4;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-.li1{
-	grid-column: 1/2;
-}
-.li2{
-	grid-column: 2/3;
-}
-.li3{
 	grid-column: 3/4;
 }
-
 .lang1{
 	grid-column: 1/2;
 	display: inline;
@@ -117,11 +87,15 @@ p{
 	font-size: 1.1em;
 }
 footer{
-	display: grid;
+	display: flex;
 	grid-column: 1/4;
+	justify-content: space-around;
 	background-color: #05412E;
 	text-align: center;
-	padding: 20px 10px 20px 10px;
-	margin: 100px 0px 0px 0px;
+	padding: 50px 10px 50px 10px;
+	margin: 50px 0px 0px 0px;
+}
+a{
 	color: white;
+	font-size: 1.1em;
 }
